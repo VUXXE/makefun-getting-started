@@ -1,4 +1,4 @@
-Read in: English | [Bahasa Indonesia](README.id.md) | [Español](README.es.md)
+Read in: English | [Bahasa Indonesia](README.id.md) | [Español](README.es.md) | [Français](README.fr.md) | [العربية](README.ar.md) | [Português](README.pt.md)
 
 > **New here? Start free with my link:** [make.fun/r/t21ja6gd](https://make.fun/r/t21ja6gd)
 >
