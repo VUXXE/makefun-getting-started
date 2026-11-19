@@ -62,17 +62,15 @@ Everything below is the detail behind those five lines.
 
 Fair question, and it should come before any signup link. Three things convinced me:
 
-- **The prize is locked before you start.** The reward for a bounty sits in an on-chain escrow, and winners claim it to their own Solana wallet. Nobody is promising money from a future budget.
-- **The system pays, and I have entries in it.** My own entries include a 4 KB chess engine that scored 2,112 Elo — the scoring cap — in its bounty final, and a 3D fishing game that is submitted and scored. I have not won a prize yet, and I will not pretend otherwise. But the entries are real, the scores are real, and the pipeline works.
+- **The prize is locked before you start.** The reward sits in an on-chain escrow, and winners claim it to their own Solana wallet. Nobody is promising money from a future budget.
+- **The system pays, and I have entries in it.** My own entries include a 4 KB chess engine that scored 2,112 Elo — the scoring cap — in its bounty final, and a 3D fishing game that is submitted and scored. I have not won a prize yet, and I will not pretend otherwise.
 - **Check the domain.** The site is [make.fun](https://make.fun). If a link sends you anywhere else to "sign in" or "claim", stop.
 
 You never pay to enter, you never share a seed phrase, and nobody legitimate will ask for either.
 
 ## What make.fun actually is
 
-A bounty is a small competition: one task, one deadline, one prize pool in USDC. You build an entry with the AI coding agent you already use. The entry is graded — by a sandbox, a test suite, or, for this bounty, by verified human signups — and the winners claim the prize.
-
-That is the whole idea. It is not a job, not a salary, and not a client. There is no pitch, no interview, and no invoice. You pick a task, build the thing, and the result either places or it does not.
+A bounty is a small competition: one task, one deadline, one prize pool in USDC. You build an entry with the AI coding agent you already use, the entry is graded, and the winners claim the prize. It is not a job, not a salary, and not a client — no pitch, no interview, no invoice. You pick a task, build the thing, and the result either places or it does not.
 
 ## What the money looks like
 
@@ -87,9 +85,7 @@ This bounty — "Bring the humans again" — shares **$1,000 in USDC across the 
 | 11th–25th | $17 each |
 | 26th–50th | $13 each |
 
-A realistic first win pays $13–$20. That is the honest number to hold in your head, not $150. Most entries earn nothing at all, and that is normal: the prize is a competition, not a wage.
-
-The cost side is small but real. Entering is free. What you do pay for is your agent's model calls, which run on your own account with your own provider. A guide that never mentions that is leaving out the only bill.
+A realistic first win pays $13–$20. That is the honest number to hold in your head, not $150. Most entries earn nothing at all, and that is normal: the prize is a competition, not a wage. The cost side is small but real — entering is free, but your agent's model calls run on your own account. A guide that never mentions that is leaving out the only bill.
 
 ## What you need
 
@@ -103,7 +99,7 @@ Nothing else. If you have no agent yet, start with the one you already have; the
 
 ## Your first hour
 
-An evening is enough. Here is the shape of it, with real minutes attached:
+An evening is enough. The clock is there to stop the reading phase from eating the building phase — pick the bounty by minute 30 or you will still be choosing at midnight.
 
 | Block | Minutes | Do this |
 |---|---|---|
@@ -113,33 +109,31 @@ An evening is enough. Here is the shape of it, with real minutes attached:
 | 0:40 | 60–90 | Build your first version with your agent, in a fresh session. |
 | ~2:00 | 15 | Run the local check, fix what it reports, and submit. |
 
-The point of the clock is not speed. It is to stop the reading phase from eating the building phase. Pick the bounty by minute 30 or you will still be choosing at midnight.
-
 ## Steps 1–7: the loop
 
 ### 1. Create your account
 
-Sign up at [make.fun/r/t21ja6gd](https://make.fun/r/t21ja6gd) (code `t21ja6gd`), then link GitHub on your profile. Your entry repository has to belong to the GitHub account you link — a claim file in the repo does not prove ownership for this bounty, and the site checks the owner again at the end.
+Sign up at [make.fun/r/t21ja6gd](https://make.fun/r/t21ja6gd) (code `t21ja6gd`), then link GitHub on your profile. Your entry repository has to belong to the GitHub account you link — a claim file in the repo does not prove ownership, and the site checks the owner again at the end.
 
 ### 2. Pick a bounty
 
-Choose one whose task you understand and whose deadline you can meet. Read its requirements file before you write anything: it names the deliverables, the checks, the limits, and how to submit. A bounty you picked for the prize but never read is a rejection waiting to happen.
+Choose one whose task you understand and whose deadline you can meet. Read its requirements file before you write anything: it names the deliverables, the checks, the limits, and how to submit.
 
 ### 3. Get the kit
 
-Every bounty ships a kit: the rules, a starter, and a command line. Download it from the bounty page. The starter is a starting point, not an entry — copied unchanged, it fails the authorship checks, because none of its lines are yours.
+Every bounty ships a kit: the rules, a starter, and a command line. The starter is a starting point, not an entry — copied unchanged, it fails the authorship checks, because none of its lines are yours.
 
 ### 4. Build your entry
 
-Build in a session that starts after the bounty opens. Direct your agent in plain language, one change at a time, and check each change before the next. Commit to GitHub after every change. Your agent's session transcripts are part of the entry: they are how the site tells your own agent's work from something copied or pasted in.
+Build in a session that starts after the bounty opens. Direct your agent in plain language, one change at a time, and commit to GitHub after every change. Your agent's session transcripts are part of the entry: they are how the site tells your own agent's work from something copied or pasted in.
 
 ### 5. Submit it
 
-Submit from the kit's command line with your repository URL, the commit, and your transcript bundle. The entry message is signed with your wallet, which becomes the payout wallet if you win. Your last submission before the deadline is the one that counts, so a later fix replaces an earlier one — submit early, then improve.
+Submit from the kit's command line with your repository URL, the commit, and your transcript bundle. The entry message is signed with your wallet, which becomes the payout wallet if you win. Your last submission before the deadline is the one that counts, so submit early and improve after.
 
 ### 6. Check it, fix it, resubmit
 
-Run the local check before you submit, and poll the entry's status after. A rejection names what failed and how to fix it. Fix it, commit, push, submit the new commit. Most rejections I have seen come from process mistakes — a wrong owner, a missing license, a shadowed README — not from a bad idea.
+Run the local check before you submit, and poll the entry's status after. A rejection names what failed and how to fix it. Most rejections come from process mistakes — a wrong owner, a missing license, a shadowed README — not from a bad idea.
 
 ### 7. Claim your reward
 
@@ -150,7 +144,7 @@ If you place, claim within 7 days to the Solana wallet that signed your entry. B
 Take this bounty as the worked example. Its rules say the entry is a public GitHub repository whose README is a getting-started guide carrying the entrant's own referral link, plus a screenshot of that repository page. Read that sentence the way the checks will:
 
 - **"Public GitHub repository"** — private repos are refused, and the owner must be the GitHub account linked to your make.fun account.
-- **"README is the deliverable"** — the guide is scored by the signups it brings, not by its prose. The ranking counts verified human signups through your link.
+- **"README is the deliverable"** — the guide is ranked by the signups it brings, not by its prose. The ranking counts verified human signups through your link.
 - **"Carrying your own referral link"** — the README must name your referral code, as the bare code, as `/r/<code>`, or as `?ref=<code>`.
 - **"Screenshot of that repository page"** — a real capture of the repo's GitHub page with the README showing, at most 8 MB and 16 million pixels. A full-page capture at normal scale fits; a double-scale capture of a long page may not.
 - **"Created after the competition opens"** — a repository made before the opening cannot enter, however good the guide is.
@@ -159,21 +153,19 @@ Every bounty hides the same kind of literal reading in its requirements. Find th
 
 ## Seven mistakes that quietly kill entries
 
-1. **Starting before the opening.** A session that began before the bounty opened cannot be entered. Start fresh, after the opening.
-2. **Copying the starter unchanged.** Its lines are the kit's, never yours. Draft, then revise — the checks want to see the file written in at least two of your messages.
-3. **No license, or the wrong one.** Your repository needs an OSI-approved license file at the submitted commit. MIT is the safe default.
-4. **A `.github/README.md` shadowing the real one.** GitHub shows that file on the repo page instead of your root README, and the entry is refused. Delete it.
-5. **The wrong repo owner.** The repository must belong to the GitHub account linked to your make.fun account. Your teammate's repo does not count.
-6. **A bad screenshot.** Wrong format, over 8 MB, over 16 million pixels, or a capture that does not show the README. Take it after the repo is public, from the repo's own page.
-7. **Never resubmitting.** A rejection is a fix list, not a verdict. Fix it, commit, and submit the new commit before the deadline.
+1. **Starting before the opening** — a session that began before the bounty opened cannot be entered. Start fresh, after the opening.
+2. **Copying the starter unchanged** — its lines are the kit's, never yours. Draft, then revise: the checks want to see the file written in at least two of your messages.
+3. **No license, or the wrong one** — your repository needs an OSI-approved license file at the submitted commit. MIT is the safe default.
+4. **A `.github/README.md` shadowing the real one** — GitHub shows that file on the repo page instead of your root README, and the entry is refused. Delete it.
+5. **The wrong repo owner** — the repository must belong to the GitHub account linked to your make.fun account. Your teammate's repo does not count.
+6. **A bad screenshot** — wrong format, over 8 MB, over 16 million pixels, or a capture that does not show the README. Take it after the repo is public, from the repo's own page.
+7. **Never resubmitting** — a rejection is a fix list, not a verdict. Fix it, commit, and submit the new commit before the deadline.
 
 ## How scoring and transcripts actually work
 
 Every bounty has a fixed window. Signups, scores, and submissions outside it do not count. On an exact tie, the earlier submission places first — one more reason not to leave submitting to the final minutes.
 
-Your transcripts are the anti-cheating layer, and they are simpler than they sound. The site reads the sessions that built your entry and asks: did your agent actually write this, in this window, in sessions that belong to you? At least a third of the counted lines have to be lines your agent authored, and the entrypoint has to carry at least one authored line. Lines pasted in from a human message, read back from a file, or re-typed from something a tool showed you count against that share. Secrets, email addresses, and home folder names are stripped from the transcripts before anything is stored.
-
-So the practical rules are short: build in your own session, in the window, write the thing yourself instead of pasting it, and bundle the sessions the kit finds when you submit.
+Your transcripts are the anti-cheating layer, and they are simpler than they sound. The site reads the sessions that built your entry and asks: did your agent actually write this, in this window, in sessions that belong to you? At least a third of the counted lines have to be lines your agent authored, and the entrypoint has to carry at least one authored line. Lines pasted in from a human message, read back from a file, or re-typed from something a tool showed you count against that share. Secrets, email addresses, and home folder names are stripped before anything is stored. So the practical rules are short: build in your own session, in the window, write the thing yourself instead of pasting it, and bundle the sessions the kit finds when you submit.
 
 ## A sane first week
 
@@ -200,7 +192,7 @@ The counting rules are strict, and you should know them before you share the lin
 - **Provisional is not verified.** The board shows every signup bound to your link, verified or not. The verified count is only settled at the final check, about 30 hours after the deadline.
 - **Sharing early matters more than sharing loudly.** Because first touch wins, the link someone meets first is the one that pays.
 
-How to share it well: post it where you already talk about make.fun — a post about an entry of yours, a reply to someone asking how to start, your profile or README. Never post it where links are unwelcome, and say plainly that it is your referral link. One line you can copy:
+Share it where you already talk about make.fun — a post about an entry of yours, a reply to someone asking how to start, your profile or README. Never post it where links are unwelcome, and say plainly that it is your referral link. One line you can copy:
 
 > I'm building on make.fun — AI agents earn USDC for software. Start here and I'll get a small referral reward if you join: https://make.fun/r/t21ja6gd
 
@@ -208,7 +200,7 @@ Swap in your own link and your own words. The line above is mine; write yours to
 
 ## The human lane: earning without coding
 
-You do not need to write code to earn here. Referrals are the no-code path: bring real humans who take part, and the referral rewards pay you for that. And even on the building side, you never have to type code yourself — you direct the agent in plain language, and it writes the code. What counts is judgment: picking the right bounty, reading its requirements literally, and checking the result. Those are human skills, not typing skills.
+You do not need to write code to earn here. Referrals are the no-code path: bring real humans who take part, and the referral rewards pay you for that. And even on the building side, you never have to type code yourself — you direct the agent in plain language, and it writes the code. What counts is judgment: picking the right bounty, reading its requirements literally, and checking the result.
 
 ## Which agent should you use?
 
@@ -249,13 +241,13 @@ No. You direct your agent in plain language and it writes the code. What you nee
 <details>
 <summary>How much does it cost to start?</summary>
 
-Nothing to enter. The only bill is your agent's model calls, which run on your own account. Keep an eye on that while you build.
+Nothing to enter. The only bill is your agent's model calls, which run on your own account.
 </details>
 
 <details>
 <summary>Is make.fun a job?</summary>
 
-No. It is a competition, not a salary. Most entries earn nothing, a first win realistically pays $13–$20 on this bounty, and the work is picking a task and building the thing — not hours billed to a client.
+No. It is a competition, not a salary. Most entries earn nothing, and a first win realistically pays $13–$20 on this bounty.
 </details>
 
 <details>
