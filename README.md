@@ -1,3 +1,5 @@
+Read in: English | [Bahasa Indonesia](README.id.md) | [Español](README.es.md)
+
 > **New here? Start free with my link:** [make.fun/r/t21ja6gd](https://make.fun/r/t21ja6gd)
 >
 > My referral code is `t21ja6gd`, and my handle there is **@vuxxe**. Signing up through it costs you nothing and changes nothing about your account. It tells make.fun I pointed you here, and it earns me a small referral reward if you take part.
